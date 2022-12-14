@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index page</title>
+</head>
+<h1> Welcome to coding with Gizem</h1>
+
+<body>
+
+
+<form action="/run_code" method="POST">
+            <textarea name="codeHere" id="coding" rows="33" cols="76" placeholder="ENTER CODE HERE">{{codearea}}</textarea>
+            <br>
+            <button type="submit" id="runCode" formaction="/run_code">Run</button>
+            <button  type="submit" id="save_code" formaction="/save_code">Save Code Snippet</button>
+            <button type="submit" id="get_code" formaction="/get_code">Pull Code Snippet</button>
+
+                    <div id="output">
+            <pre>{{print_output}}</pre>
+        </div>
+        <br>
+    </div>
+    <pre> clicked run button {{runClickCounter_}} times</pre>
+<!--            <br>-->
+<!--            <div id="uploadDownloadContainer">-->
+<!--                <button  id="downloadButton" onclick="saveTextAsFile('download.txt')">Download Code</button>-->
+<!--                <input id="txtFile" type="file"/>-->
+<!--            </div>-->
+        </form>
+
+<!--    <pre> clicked run button {{runClickCounter_}} times</pre>-->
+<!--<h4> clicked run button {{runClickCounter_}} times</h4>-->
+
+</body>
+</html>
